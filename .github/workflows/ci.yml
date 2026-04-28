@@ -53,6 +53,7 @@ jobs:
           --self-contained true
           --no-restore
           -p:PublishSingleFile=true
+          -p:DebugType=None
           -o ./artifacts/${{ matrix.rid }}
 
       - name: Zip artifact
